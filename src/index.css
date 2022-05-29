@@ -8,9 +8,12 @@ body {
   background-color:#EAEAEA ;
 }
 .active{
-  color:rgb(140, 255, 0);
+  color:rgb(255, 0, 51);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.Line{
+  margin-bottom: 30px;
 }
