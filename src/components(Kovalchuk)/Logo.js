@@ -6,7 +6,7 @@ export default class Search extends Component{
         return(
             <div>
 <img src={Logotip} width="280" height='70' />
-<hr  size="100px" width="100000px" align="center" color='black'/>
+<hr className="Line" size="100px" width="10000px" align="center" color='black'/>
             </div>
 
         )

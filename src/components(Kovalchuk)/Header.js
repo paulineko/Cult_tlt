@@ -1,38 +1,55 @@
-import React, { Component } from 'react';
-import { Container,  Nav,  NavbarBrand, Navbar, NavLink, } from 'react-bootstrap';
-import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React,{Component} from 'react'
 import './Header.css'
+import{
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom"
 import Info from '../pages/Info'
 import Museum from '../pages/Museum';
 import Phihalrmonic from '../pages/Phihalrmonic';
 import Theaters from '../pages/Theaters';
-
-
+import { Nav, Navbar } from 'react-bootstrap';
 
 const Header = () => {
   return (
-  <>
- 
- <Navbar bg="light" variant="light">
-    <Container>
-    
-    <Nav className="me-auto">
-     
-    </Nav>
-    </Container>
-  </Navbar>
-                <Router>
-                    <Switch>
-                        <Route exact path="/" component={Info} />
-                        <Route exact path="/museum" component={Museum} />
-                        <Route exact path="/phihalrmonic" component={Phihalrmonic} />
-                        <Route exact path="/theaters" component={Theaters} />
-
-                    </Switch>
-                </Router>
-            </>
-
+<Router>
+    <div className="Header">
+      <nav>
+        <ul>
+          <li className="info">
+            <Link className="info_text" to="/">о городе</Link>
+          </li>
+          <li className="museum">
+            <Link className="museum_text" to="/museum">музеи</Link>
+          </li>
+          <li className="theaters">
+            <Link className="theaters_text" to="/theaters">театры</Link>
+          </li>
+          <li className="phihalrmonic">
+            <Link className="phihalrmonic_text" to="/phihalrmonic">филармонии</Link>
+          </li>
+          
+        </ul>
+      </nav>
+      <Switch>
+<Route path="/Museum">
+  <Museum/>
+</Route>
+<Route path="/Phihalrmonic">
+  <Phihalrmonic/>
+</Route>
+<Route path="/Theaters">
+  <Theaters/>
+</Route>
+<Route path="/">
+  <Info/>
+  </Route>
+  <Info/>
+      </Switch>
+    </div>
+    </Router>
   )
 }
 

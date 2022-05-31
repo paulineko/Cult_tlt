@@ -1,6 +1,8 @@
 
+import React, { Component }  from 'react';
 import './components(Kovalchuk)/RunningLine.js';
 import './App.css';
+import './components(Kovalchuk)/Header.css'
 import RunningLine from './components(Kovalchuk)/RunningLine.js';
 import Search from './components(Kovalchuk)/Search.js';
 import Logo from './components(Kovalchuk)/Logo.js'
