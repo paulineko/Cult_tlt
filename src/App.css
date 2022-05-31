@@ -27,9 +27,6 @@ button {
 
 
 
-/* Media screen size */
-@media screen and (min-width: 768px) { 
-
 
 
  
@@ -134,4 +131,58 @@ font-weight: bold
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.size-container {
+
+  align-items: flex-start;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.row-rast {
+  display: flex;
+  align-items: stretch;
+
+}
+
+
+.row-col1 {
+width: 600px;
+}
+
+.row-col2 {
+  width: 400px;
+}
+
+.button1
+{
+  text-decoration: none;
+  
+  background: black;
+  color: #FFFFFF;
+  line-height: 18px;
+  height: 35px;
+  width: 110px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 7px;
+  display: inline-flex;
+  padding: 0px 55px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+  float:left;
+}
+
+.button1:hover {
+  transition: background 0.3 ease  0s;
+  border: 2px solid #e34761;
+  border-color: black;
+  background: white;
+  color: black;
 }
