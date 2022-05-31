@@ -30,7 +30,7 @@ button {
 
 
  
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -137,7 +137,7 @@ font-weight: bold
 .size-container {
 
   align-items: flex-start;
-  margin-top: 25px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -154,7 +154,7 @@ width: 600px;
 }
 
 .row-col2 {
-  width: 400px;
+  width: 500px;
 }
 
 .button1
@@ -185,4 +185,9 @@ width: 600px;
   border-color: black;
   background: white;
   color: black;
+}
+
+.photo
+{
+  box-shadow: 0px 0px 10px 3px rgb(106, 106, 106);
 }

@@ -19,7 +19,7 @@ function App() {
    <Search/>
    <Logo/>
    <Header/>
-   <Museum/>
+  
        </div>
   );
 }
