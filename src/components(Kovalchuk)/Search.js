@@ -15,7 +15,7 @@ export default class Search extends Component{
      type="text"
      className="seach_input"
      />
-     <Button ><img src={Lupa} width="10" height="10"/></Button>
+     <Button ><img src={Lupa} width="15" height="15"/></Button>
         </form>
        </div>
       )
