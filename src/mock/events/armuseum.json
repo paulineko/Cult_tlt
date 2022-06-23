@@ -1,0 +1,37 @@
+[
+  {
+    "date": "с 27 мая в 19:00 по 9 июля",
+    "name": "Евгений Добровинский: 50 лет в ПЛАКАТЕ",
+    "description": null,
+    "minAge": null,
+    "price": null
+  },
+  {
+    "date": "с 29 марта в 18:00 по 19 мая",
+    "name": "Другая жизнь. Живопись и графика Константина Батынкова",
+    "description": null,
+    "minAge": null,
+    "price": null
+  },
+  {
+    "date": "с 5 февраля в 16:00 по 18 марта",
+    "name": "На краю земли",
+    "description": null,
+    "minAge": null,
+    "price": null
+  },
+  {
+    "date": "с 18 декабря в 00:00 по 29 января",
+    "name": "Знаки, Символы и Мифы",
+    "description": null,
+    "minAge": null,
+    "price": null
+  },
+  {
+    "date": "с 1 октября в 00:00 по 4 декабря",
+    "name": "Метаэкспрессионизм",
+    "description": null,
+    "minAge": null,
+    "price": null
+  }
+]
