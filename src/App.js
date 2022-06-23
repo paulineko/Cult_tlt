@@ -8,7 +8,7 @@ import Search from './components(Kovalchuk)/Search.js';
 import Logo from './components(Kovalchuk)/Logo.js'
 import Header from './components(Kovalchuk)/Header.js';
 import Footer from './components(Kovalchuk)/Footer.js';
-import Museum from './pages/Museum.js';
+
 
 
 function App() {

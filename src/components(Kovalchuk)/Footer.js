@@ -16,7 +16,8 @@ const Footer = () => {
     <p><a className="Fmuseum" href="https://www.w3.org/">музеи</a> </p>
     <p><a className="Ftheaters" href="https://www.w3.org/">театры</a> </p>
     <p><a className="Fphihalrmonic" href="https://www.w3.org/">филармонии</a> </p></Col>
-    <Col className="Footer2"><p><a className="Fbook" href="https://www.w3.org/">словарь Тольяттинца</a></p>
+    <Col className="Footer2">
+    <p><a className="Fbook" href="https://www.w3.org/">словарь Тольяттинца</a></p>
     <p><a className="Gallery" href="https://www.w3.org/">фотогалерея</a></p>
     </Col>
     <Col className="Footer3">
