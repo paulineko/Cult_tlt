@@ -1,13 +1,28 @@
 import React from 'react'
 import { Row, Container, Col, Image, Button} from 'react-bootstrap';
+import{
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom"
 import Instagram from '../image/Instagram.png';
 import Telegram from '../image/Telegram.png';
 import VK from '../image/VK.png';
 
+import Dictionary from '../pages/dictionary';
 
   
 const Footer = () => {
-  return (<div>
+  return (
+    <Router> 
+  <div>
+  <Switch>
+<Route path="/dictionary">
+  <Dictionary/>
+</Route>
+      </Switch>
+  <nav>
     <hr className="Line" size="100px" width="1500px" align="center" color='black'/>
     <Container className="Footer">
   <Row className="Footer_size">
@@ -17,7 +32,7 @@ const Footer = () => {
     <p><a className="Ftheaters" href="https://www.w3.org/">театры</a> </p>
     <p><a className="Fphihalrmonic" href="https://www.w3.org/">филармонии</a> </p></Col>
     <Col className="Footer2">
-    <p><a className="Fbook" href="https://www.w3.org/">словарь Тольяттинца</a></p>
+    <p> <Link className="Fbook" to ="/dictionary">словарь Тольяттинца</Link></p>
     <p><a className="Gallery" href="https://www.w3.org/">фотогалерея</a></p>
     </Col>
     <Col className="Footer3">
@@ -36,8 +51,11 @@ const Footer = () => {
   </Row>
   
 </Container>
-  
+</nav>
+
     </div>
+    </Router>
+    
   )
 }
 

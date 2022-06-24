@@ -37,16 +37,20 @@ const Header = () => {
 <Route path="/Museum">
   <Museum/>
 </Route>
+
 <Route path="/Phihalrmonic">
   <Phihalrmonic/>
 </Route>
+
 <Route path="/Theaters">
   <Theaters/>
 </Route>
+
 <Route path="/">
   <Info/>
   </Route>
-  <Info/>
+
+ 
       </Switch>
     </div>
     </Router>

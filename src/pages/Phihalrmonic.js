@@ -1,21 +1,6 @@
 import React from 'react'
 import Logotip from '../image/Филармония.jpg';
-import W2 from '../image/Баклажка.jpg';
-import W3 from '../image/Вертушка.jpg';
-import W4 from '../image/ДБ.jpg';
-import W5 from '../image/Зеленка.jpg';
-import W6 from '../image/Изолента.jpg';
-import W7 from '../image/Изолента.jpg';
-import W8 from '../image/Книжка.jpg';
-import W9 from '../image/Муравьишки.jpg';
-import W10 from '../image/НГ.jpg';
-import W11 from '../image/ЗП.jpg';
-import W12 from '../image/ПП.jpg';
-import W13 from '../image/Свечка.jpg';
-import W14 from '../image/СГ.jpg';
-import W15 from '../image/ТЯ.png';
-import W16 from '../image/Шлюз.jpg';
-import W17 from '../image/Шоколадка.jpg';
+
 import { Row, Container, Col, Image, Button} from 'react-bootstrap';
 
 
