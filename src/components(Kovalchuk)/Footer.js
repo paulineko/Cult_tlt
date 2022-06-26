@@ -13,10 +13,10 @@ const Footer = () => {
                 <Container className="Footer">
                     <Row className="Footer_size">
                         <Col className="Footer1">
-                            <p><a className="Finfo" href="https://www.w3.org/">о городе</a></p>
-                            <p><a className="Fmuseum" href="https://www.w3.org/">музеи</a></p>
-                            <p><a className="Ftheaters" href="https://www.w3.org/">театры</a></p>
-                            <p><a className="Fphihalrmonic" href="https://www.w3.org/">филармонии</a></p></Col>
+                            <p> <Link className="Finfo" to="/">о городе</Link></p>
+                            <p><Link  className="Fmuseum"  to="/museum">музеи</Link></p>
+                            <p> <Link className="Ftheaters" to="/theaters">театры</Link></p>
+                            <p> <Link className="Fphihalrmonic" to="/phihalrmonic">филармонии</Link></p></Col>
                         <Col className="Footer2">
                             <p><Link className="Fbook" to="/dictionary">словарь Тольяттинца</Link></p>
                             <p><a className="Gallery" href="https://www.w3.org/">фотогалерея</a></p>
