@@ -7,6 +7,11 @@
     padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
 
+.header-nav-bar {
+    display: flex;
+    justify-content: space-around;
+}
+
 .Router {
     background-color: aqua;
 }

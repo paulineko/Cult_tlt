@@ -8,12 +8,12 @@ export default class Search extends Component {
     render() {
         return (
             <div className="form">
-                <form className="search_form">
+                <form className="search-form">
                     <input
                         type="text"
-                        className="seach_input"
+                        className="search-input"
                     />
-                    <Button><img src={Lupa} width="15" height="15"/></Button>
+                    <Button><img src={Lupa} width="15" height="15" alt={''}/></Button>
                 </form>
             </div>
         )

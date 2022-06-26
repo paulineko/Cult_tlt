@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import './Header.css'
 import {Link} from "react-router-dom"
 
@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div className="Header">
             <nav>
-                <ul>
+                <ul className={'header-nav-bar'}>
                     <li className="info">
                         <Link className="info_text" to="/">о городе</Link>
                     </li>

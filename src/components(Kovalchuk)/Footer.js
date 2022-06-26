@@ -29,9 +29,9 @@ const Footer = () => {
                             <Button className='button2' variant="outline-dark">Готово</Button>
                         </Col>
                         <Col className="Footer4">
-                            <img className='icons' src={Instagram} width="50" height='50'/>
-                            <img className='icons' src={Telegram} width="50" height='50'/>
-                            <img className='icons' src={VK} width="50" height='50'/>
+                            <img className='icons' src={Instagram} width="50" height='50' alt={''}/>
+                            <img className='icons' src={Telegram} width="50" height='50' alt={''}/>
+                            <img className='icons' src={VK} width="50" height='50' alt={''}/>
                         </Col>
                     </Row>
                 </Container>

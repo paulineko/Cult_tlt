@@ -1,482 +1,465 @@
 .App {
-background: #EAEAEA;
+    background: #EAEAEA;
 }
 
 /* Elements */
 
 
 button {
-  font-size: 20px;
-  margin-right: 10px;
-  color: white;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  float: right;
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    float: right;
 }
-.Map{
-  margin-top: -20px;
-  
+
+.Map {
+    margin-top: -20px;
+
 }
 
 /* Class */
 
 
-
-
-
-
-
-
- 
-
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
-.seach_input{
-  background-color:#EAEAEA;
-  border-radius: 10px;
-  opacity: 50;
- 
+.search-input {
+    background-color: #EAEAEA;
+    border-radius: 10px;
+    opacity: 50;
 }
 
-
-.info_link{
-  background-color: yellow;
-  
+.info-link {
+    background-color: yellow;
 }
 
-.search_form{
-  background-color:#EAEAEA ;
-  float: right;
-  margin-right: 50px;
-  margin-top: 30px;
-  
- 
-}
-.Header{
-  background-color:#EAEAEA ;
+.search-form {
+    background-color: #EAEAEA;
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
 }
 
-.info{
-  margin-left: -3px;
-   background-color: #EAEAEA;
-  list-style-type: none;
-  display: inline; /* Отображать как строчный элемент */
-  border: 2px solid #000; /* Рамка вокруг текста */
-  padding: 10px 140px 10px; /* Поля вокруг текста */
+.Header {
+    background-color: #EAEAEA;
 }
+
+.info {
+    margin-left: -3px;
+    background-color: #EAEAEA;
+    list-style-type: none;
+    display: inline; /* Отображать как строчный элемент */
+    border: 2px solid #000; /* Рамка вокруг текста */
+    padding: 10px 140px 10px; /* Поля вокруг текста */
+}
+
 .info:hover {
-  transition: background 0.3 ease  0s;
-  border: 2px solid #e34761;
-  border-color: black;
-  background: #7B9777;
-  color: black;
-  
+    transition: background 0.3 ease 0s;
+    border: 2px solid #e34761;
+    border-color: black;
+    background: #7B9777;
+    color: black;
+
 }
 
-.museum{
-  background-color: #EAEAEA;
-  list-style-type: none;
-  display: inline; /* Отображать как строчный элемент */
-  margin-left: 25px;
-  border: 2px solid #000; /* Рамка вокруг текста */
-  padding: 10px 140px 10px; /* Поля вокруг текста */
+.museum {
+    background-color: #EAEAEA;
+    list-style-type: none;
+    display: inline; /* Отображать как строчный элемент */
+    margin-left: 25px;
+    border: 2px solid #000; /* Рамка вокруг текста */
+    padding: 10px 140px 10px; /* Поля вокруг текста */
 }
 
 .museum:hover {
-  transition: background 0.3 ease  0s;
-  border: 2px solid #e34761;
-  border-color: black;
-  background: #568EA4;
-  color: black;
-  
-}
-.phihalrmonic{
-  background-color: #eaeaeaed;
-  list-style-type: none;
-  display: inline; /* Отображать как строчный элемент */
-  margin-left: 25px;
-  border: 2px solid #000; /* Рамка вокруг текста */
-  padding: 10px 110px 10px; /* Поля вокруг текста */
-}
-.phihalrmonic:hover {
-  transition: background 0.3 ease  0s;
-  border: 2px solid #e34761;
-  border-color: black;
-  background: #7B9777;
-  color: black;
-  
+    transition: background 0.3 ease 0s;
+    border: 2px solid #e34761;
+    border-color: black;
+    background: #568EA4;
+    color: black;
 }
 
-.theaters{
-  background-color: #EAEAEA;
-  list-style-type: none;
-  display: inline; /* Отображать как строчный элемент */
-  margin-left: 25px;
-  border: 2px solid #000; /* Рамка вокруг текста */
-  padding: 10px 140px 10px; /* Поля вокруг текста */
+.phihalrmonic {
+    background-color: #eaeaeaed;
+    list-style-type: none;
+    display: inline; /* Отображать как строчный элемент */
+    margin-left: 25px;
+    border: 2px solid #000; /* Рамка вокруг текста */
+    padding: 10px 110px 10px; /* Поля вокруг текста */
+}
+
+.phihalrmonic:hover {
+    transition: background 0.3 ease 0s;
+    border: 2px solid #e34761;
+    border-color: black;
+    background: #7B9777;
+    color: black;
+}
+
+.theaters {
+    background-color: #EAEAEA;
+    list-style-type: none;
+    display: inline; /* Отображать как строчный элемент */
+    margin-left: 25px;
+    border: 2px solid #000; /* Рамка вокруг текста */
+    padding: 10px 140px 10px; /* Поля вокруг текста */
 }
 
 .theaters:hover {
-  transition: background 0.3 ease  0s;
-  border: 2px solid #e34761;
-  border-color: black;
-  background: #15456D;
-  color: black;
-  
+    transition: background 0.3 ease 0s;
+    border: 2px solid #e34761;
+    border-color: black;
+    background: #15456D;
+    color: black;
 }
-.info_text
-{text-decoration: none;
-color: black;
-font-weight: bold
+
+.info_text {
+    text-decoration: none;
+    color: black;
+    font-weight: bold
 }
 
 .info_text:hover {
- 
-  color: white;
-  
-}
-.museum_text
-{text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-.museum_text:hover {
- 
-  color: white;
-  
+    color: white;
 }
 
-.phihalrmonic_text
-{text-decoration: none;
-  color: black;
-  font-weight: bold
+.museum_text {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.museum_text:hover {
+
+    color: white;
+
+}
+
+.phihalrmonic_text {
+    text-decoration: none;
+    color: black;
+    font-weight: bold
 }
 
 .phihalrmonic_text:hover {
- 
-  color: white;
-  
+    color: white;
 }
-.theaters_text
-{text-decoration: none;
-  color: black;
-  font-weight: bold
+
+.theaters_text {
+    text-decoration: none;
+    color: black;
+    font-weight: bold
 }
+
 .theaters_text:hover {
- 
-  color: white;
-  
+
+    color: white;
+
 }
+
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 
-.Finfo{
-  margin-left: 70px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold
-  
-}
-.Fmuseum{
-  margin-left: 70px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold
-}
-.Fphihalrmonic{
-  margin-left: 70px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold
-}
-.Ftheaters{
-  margin-left: 70px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold
-}
-.Fbook{
-  margin-left: 70px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold
+.Finfo {
+    margin-left: 70px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold
 
 }
-.Gallery{
-  margin-left: 70px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold
+
+.Fmuseum {
+    margin-left: 70px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+}
+
+.Fphihalrmonic {
+    margin-left: 70px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+}
+
+.Ftheaters {
+    margin-left: 70px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+}
+
+.Fbook {
+    margin-left: 70px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold
 
 }
-.Footer{
-  align-items: flex-start;
-  margin-top: 25px;
-  display: flex;
-  
-}
-.Footer_size{
-  display: flex;
-  align-items: stretch;
-}
-.Footer1{
-width: 200px;
-}
-.Footer2{
-  width: 300px;
-}
-.Footer3{
-  width: 700px;
-  display: flex;
-}
-.Footer4{
-  width: 300px;
-}
-.button2
-{
-  text-decoration: none;
 
-  background: black;
-  color: #FFFFFF;
-  line-height: 18px;
-  height: 35px;
-  width: 110px;
-  font-weight: bold;
-  font-size: 15px;
-  border-radius: 7px;
-  display: inline-flex;
-  padding: 0px 55px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-left: 30px;
-  cursor: pointer;
-  float:left;
-  margin-top: 40px;
+.Gallery {
+    margin-left: 70px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+
+}
+
+.Footer {
+    align-items: flex-start;
+    margin-top: 25px;
+    display: flex;
+
+}
+
+.Footer_size {
+    display: flex;
+    align-items: stretch;
+}
+
+.Footer1 {
+    width: 200px;
+}
+
+.Footer2 {
+    width: 300px;
+}
+
+.Footer3 {
+    width: 700px;
+    display: flex;
+}
+
+.Footer4 {
+    width: 300px;
+}
+
+.button2 {
+    text-decoration: none;
+
+    background: black;
+    color: #FFFFFF;
+    line-height: 18px;
+    height: 35px;
+    width: 110px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 7px;
+    display: inline-flex;
+    padding: 0 55px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 30px;
+    cursor: pointer;
+    float: left;
+    margin-top: 40px;
 }
 
 .button2:hover {
-  transition: background 0.3 ease  0s;
-  border: 2px solid #e34761;
-  border-color: black;
-  background: white;
-  color: black;
-  
-}
-.subscribe_input{
-  background-color: transparent;
-  margin-right: 20px;
-  width: 287px;
-  
-   padding: 0 0 10px 0 ;
-   border: none;
-   border-bottom: 1px solid black;
-   outline:none ;
-   font-size: 15px;
-   line-height: 18px;
-   letter-spacing: 0.04em;
-   color: black;
-   margin-left: 100px;
-}
-.subscribe_form{
-  margin-top: 40px;
+    transition: background 0.3 ease 0s;
+    border: 2px solid #e34761;
+    border-color: black;
+    background: white;
+    color: black;
+
 }
 
-.icons{
-  margin-top: 40px;
+.subscribe_input {
+    background-color: transparent;
+    margin-right: 20px;
+    width: 287px;
+
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: black;
+    margin-left: 100px;
+}
+
+.subscribe_form {
+    margin-top: 40px;
+}
+
+.icons {
+    margin-top: 40px;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 
 .size-container {
 
-  align-items: flex-start;
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .row-rast {
-  display: flex;
-  align-items: stretch;
+    display: flex;
+    align-items: stretch;
 
 }
 
 
 .row-col1 {
-width: 600px;
+    width: 600px;
 }
 
 .row-col2 {
-  width: 500px;
+    width: 500px;
 }
 
-.button1
-{
-  text-decoration: none;
-  
-  background: black;
-  color: #FFFFFF;
-  line-height: 18px;
-  height: 35px;
-  width: 110px;
-  font-weight: bold;
-  font-size: 15px;
-  border-radius: 7px;
-  display: inline-flex;
-  padding: 0px 55px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 30px;
-  cursor: pointer;
-  float:left;
+.button1 {
+    text-decoration: none;
+
+    background: black;
+    color: #FFFFFF;
+    line-height: 18px;
+    height: 35px;
+    width: 110px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 7px;
+    display: inline-flex;
+    padding: 0 55px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    float: left;
 }
 
 .button1:hover {
-  transition: background 0.3 ease  0s;
-  border: 2px solid #e34761;
-  border-color: black;
-  background: white;
-  color: black;
+    transition: background 0.3 ease 0s;
+    border: 2px solid #e34761;
+    border-color: black;
+    background: white;
+    color: black;
 }
 
-.photo
-{
-  box-shadow: 0px 0px 10px 3px rgb(106, 106, 106);
+.photo {
+    box-shadow: 0 0 10px 3px rgb(106, 106, 106);
 }
 
-.s-container
-{
-  align-items: flex-start;
-  background: #7B9777;
-  display: flex;
-  justify-content: center;
+.s-container {
+    align-items: flex-start;
+    background: #7B9777;
+    display: flex;
+    justify-content: center;
 }
+
 .s-container:hover {
-  transition: background 0.1 ease  0s;
-  background: #7B9777;
+    transition: background 0.1 ease 0s;
+    background: #7B9777;
 }
 
-.s2-container
-{
-  align-items: flex-start;
-  background: #568EA4;
-  display: flex;
-  justify-content: center;
+.s2-container {
+    align-items: flex-start;
+    background: #568EA4;
+    display: flex;
+    justify-content: center;
 }
 
 .s2-container:hover {
-  transition: background 0.1 ease  0s;
-  background: #568EA4;
+    transition: background 0.1 ease 0s;
+    background: #568EA4;
 }
 
-.s3-container
-{
-  align-items: flex-start;
-  background: #588469;
-  display: flex;
-  justify-content: center;
+.s3-container {
+    align-items: flex-start;
+    background: #588469;
+    display: flex;
+    justify-content: center;
 }
 
 .s3-container:hover {
-  transition: background 0.1 ease  0s;
-  background: #588469;
+    transition: background 0.1 ease 0s;
+    background: #588469;
 }
 
-.s4-container
-{
-  align-items: flex-start;
-  background: #8ca0b1;
-  display: flex;
-  justify-content: center;
+.s4-container {
+    align-items: flex-start;
+    background: #8ca0b1;
+    display: flex;
+    justify-content: center;
 }
 
 .s4-container:hover {
-  transition: background 0.1 ease  0s;
-  background: #8ca0b1;
+    transition: background 0.1 ease 0s;
+    background: #8ca0b1;
 }
 
 
+.r-col1 {
+    font-size: 100px;
+    width: 300px;
+    margin-top: 20px;
 
-.r-col1
-{
-  font-size: 100px;
-  width: 300px;
-  margin-top: 20px;
-  
 }
 
-.r-col3
-{
-  
-  width: 300px;
-  margin-left: 20px;
+.r-col3 {
+
+    width: 300px;
+    margin-left: 20px;
 }
 
-.photo-w
-{
-  margin-top: 20px;
+.photo-w {
+    margin-top: 20px;
 }
 
-.text-r
-{
-  font-weight: bold;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 250px;
+.text-r {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 250px;
 }
 
-
-.a-container
-{
-  align-items: flex-start;
-  background: #8ca0b1;
-  display: flex;
-  justify-content: center;
- 
- 
+.alphabet-container {
+    display: flex;
+    align-items: center;
+    background: #8ca0b1;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 70px;
+    font-weight: bold;
 }
 
-.row-rast-a
-{
-  display: flex;
-  align-items: stretch;
-  
+.alphabet-letter {
+    margin: 0;
+    width: auto;
+    padding: 12px;
 }
 
-.a-col
-{
-  font-size: 70px;
-  width: 120px;
-  height: 120;
-  
-}
-
-.text-a
-{
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.alphabet-letter:hover {
+    cursor: pointer;
+    color: darkred;
 }
