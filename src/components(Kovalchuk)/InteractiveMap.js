@@ -2,9 +2,15 @@
 import React, { useEffect } from 'react';
 import './InteractiveMap.css';
 import 'leaflet/dist/leaflet.css';
-import {MapContainer, ImageOverlay, useMap, Marker, Popup} from 'react-leaflet';
+import {MapContainer, useMap, Marker, Popup} from 'react-leaflet';
 import L from 'leaflet';
 import MAP_PNG from '../image/Map.png';
+import MAP_MARKERS from "../mock/markers";
+
+import ICON_MUSEUM from '../image/map-markers/museum.png';
+import ICON_PHILARMONY from '../image/map-markers/philarmony.png';
+import ICON_THEATER from '../image/map-markers/theater.png';
+
 
 const MapImage = () => {
     const map = useMap();
@@ -12,8 +18,8 @@ const MapImage = () => {
 
     useEffect(() => {
         const image = L.imageOverlay(MAP_PNG, bounds).addTo(map);
-        map.fitBounds(image.getBounds());
         map.setMinZoom(2);
+        map.fitBounds(image.getBounds());
         map.on('click', (e) => {
             console.log(e.latlng);
         });
@@ -23,16 +29,27 @@ const MapImage = () => {
 }
 
 export default function InteractiveMap() {
-    const markers = [
-        {
-            name: 'Hi World',
-            lat: 74.90997533716637,
-            lng: 331.28318157186027
+    const getIcon = (iconType) => {
+        switch (iconType) {
+            case 'museum':
+                return ICON_MUSEUM;
+            case 'theater':
+                return ICON_THEATER;
+            case 'philarmony':
+                return ICON_PHILARMONY;
         }
-    ].map((marker) => {
-        return <Marker position={{lat: marker.lat, lng: marker.lng}}>
+        return null;
+    }
+
+    const markers = MAP_MARKERS.map((marker, index) => {
+        const markerIcon = L.icon({
+            iconUrl: getIcon(marker?.type),
+            iconSize: [24, 24]
+        });
+
+        return <Marker key={index} icon={markerIcon} position={{lat: marker?.lat, lng: marker?.lng}}>
             <Popup>
-                {marker.name}
+                {marker?.name}
             </Popup>
         </Marker>;
     });
