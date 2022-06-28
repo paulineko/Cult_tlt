@@ -1,10 +1,10 @@
 import React from 'react'
-import W2 from '../image/Баклажка.jpg';
-import W3 from '../image/Вертушка.jpg';
-import W4 from '../image/ДБ.jpg';
+import W2 from '../image/Баклажка.png';
+import W3 from '../image/Вертушка.png';
+import W4 from '../image/ДБ.png';
 import W5 from '../image/Зеленка.jpg';
-import W6 from '../image/Изолента.jpg';
-import W7 from '../image/Изолента.jpg';
+import W6 from '../image/Изолента.png';
+import W7 from '../image/Изолента.png';
 import W8 from '../image/Книжка.jpg';
 import W9 from '../image/Муравьишки.jpg';
 import W10 from '../image/НГ.jpg';
@@ -47,12 +47,8 @@ const dictionary = () => {
             <Container className="s-container">
                 <Row className='row-rast'>
 
-                    <Col className='r-col1'>
-                        <p>Б</p>
-                    </Col>
-
                     <Col className='r-col2'>
-                        <Image className='photo-w' src={W2} width="300" height='300' fluid/>
+                        <Image className='photo-w' src={W2} width="390" height='300' fluid/>
                     </Col>
 
                     <Col className='r-col3'>
@@ -66,15 +62,11 @@ const dictionary = () => {
             <Container className="s2-container">
                 <Row className='row-rast'>
 
-                    <Col className='r-col1'>
-                        <p>В</p>
+                    <Col className='r-col-v'>
+                        <Image className='photo-w' src={W3} width="520" height='300' fluid/>
                     </Col>
 
-                    <Col className='r-col2'>
-                        <Image className='photo-w' src={W3} width="300" height='300' fluid/>
-                    </Col>
-
-                    <Col className='r-col3'>
+                    <Col className='r-col4'>
                         <h1>Вертушка</h1>
                         <p>Вертушка- это вход в ТРК "Русь-на-Волге" со стороны улицы революционной</p>
                     </Col>
@@ -83,28 +75,24 @@ const dictionary = () => {
             <Container className="s3-container">
                 <Row className='row-rast'>
 
-                    <Col className='r-col1'>
-                        <p>Д</p>
+                    <Col className='r-col5'>
+                        <Image className='photo-w' src={W4} width="720" height='300' fluid/>
                     </Col>
 
-                    <Col className='r-col2'>
-                        <Image className='photo-w' src={W4} width="300" height='300' fluid/>
-                    </Col>
-
-                    <Col className='r-col3'>
+                    <Col className='r-col6'>
                         <h1>Дб</h1>
                         <p>Дб на тольяттинском сленге- Дворец бракосочетания. Под аббревиатурой подразумевается
                             крыша здания, ставшая излюбленным местом тусовок сразу несколько поколений молодежи</p>
                     </Col>
+
+                
                 </Row>
 
 
             </Container>
             <Container className="s4-container">
                 <Row className='row-rast'>
-                    <Col className='r-col1'>
-                        <p>З</p>
-                    </Col>
+                  
 
                     <Col className='r-col2'>
                         <Image className='photo-w' src={W5} width="300" height='300' fluid/>
@@ -119,9 +107,7 @@ const dictionary = () => {
             <Container className="s-container">
                 <Row className='row-rast'>
 
-                    <Col className='r-col1'>
-                        <p>И</p>
-                    </Col>
+                   
 
                     <Col className='r-col2'>
                         <Image className='photo-w' src={W6} width="300" height='300' fluid/>
