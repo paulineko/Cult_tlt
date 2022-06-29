@@ -1,20 +1,17 @@
 import React from 'react'
-import W2 from '../image/Баклажка.png';
-import W3 from '../image/Вертушка.png';
+import W2 from '../image/баклажка.png';
+import W3 from '../image/вертушка.png';
 import W4 from '../image/ДБ.png';
-import W5 from '../image/Зеленка.jpg';
 import W6 from '../image/Изолента.png';
-import W7 from '../image/Изолента.png';
-import W8 from '../image/Книжка.jpg';
-import W9 from '../image/Муравьишки.jpg';
-import W10 from '../image/НГ.jpg';
-import W11 from '../image/ЗП.jpg';
-import W12 from '../image/ПП.jpg';
-import W13 from '../image/Свечка.jpg';
+import W7 from '../image/к_буква.png';
+import W8 from '../image/К_книжка.png';
+import W9 from '../image/Муравьишки.png';
+import W12 from '../image/ПП.png';
 import W14 from '../image/СГ.jpg';
 import W15 from '../image/ТЯ.png';
-import W16 from '../image/Шлюз.jpg';
-import W17 from '../image/Шоколадка.jpg';
+import W17 from '../image/Буква_З.png';
+import W18 from '../image/с_буква.png';
+import W19 from '../image/ш_буква.png';
 import {Row, Container, Col, Image} from 'react-bootstrap';
 
 const dictionary = () => {
@@ -37,15 +34,23 @@ const dictionary = () => {
     }
 
     const alphabet = Array.from('абвгдеёжзийклмнопрстуфхцчшщъыьэюя').map((letter, index) => {
-        return <a onClick={scrollToLetter} key={index} className='alphabet-letter'>{letter.toUpperCase()}</a>
+        let image = null;
+        try {
+            image = require(`../image/alphabet/${letter.toUpperCase()}.png`);
+        } catch (e) {}
+        return image ? <img class='alphabet-letter' key={index} src={image} alt={''}/> : null;
     });
 
     return (
         <div>
-            <div className="alphabet-container">{alphabet}</div>
+            <div className="alphabet-container"><div class='alphabet-child'>{alphabet}</div></div>
 
             <Container className="s-container">
                 <Row className='row-rast'>
+
+                    <Col className='r-col1'>
+                        <p>Б</p>
+                    </Col> 
 
                     <Col className='r-col2'>
                         <Image className='photo-w' src={W2} width="390" height='300' fluid/>
@@ -56,14 +61,17 @@ const dictionary = () => {
                         <p>В обиходе - пластиковая бутылка</p>
                     </Col>
                 </Row>
-
-
             </Container>
+
             <Container className="s2-container">
                 <Row className='row-rast'>
 
+                    <Col className='r-col1'>
+                        <p>В</p>
+                    </Col>
+
                     <Col className='r-col-v'>
-                        <Image className='photo-w' src={W3} width="520" height='300' fluid/>
+                        <Image className='photo-w' src={W3} width="588" height='327' fluid/>
                     </Col>
 
                     <Col className='r-col4'>
@@ -72,55 +80,64 @@ const dictionary = () => {
                     </Col>
                 </Row>
             </Container>
+            
             <Container className="s3-container">
                 <Row className='row-rast'>
 
+                    <Col className='r-col1'>
+                        <p>Д</p>
+                    </Col>
+
                     <Col className='r-col5'>
-                        <Image className='photo-w' src={W4} width="720" height='300' fluid/>
+                        <Image className='photo-w' src={W4} width="680" height='280' fluid/>
                     </Col>
 
                     <Col className='r-col6'>
                         <h1>Дб</h1>
-                        <p>Дб на тольяттинском сленге- Дворец бракосочетания. Под аббревиатурой подразумевается
+                        <p>Дб на тольяттинском сленге - Дворец бракосочетания. Под аббревиатурой подразумевается
                             крыша здания, ставшая излюбленным местом тусовок сразу несколько поколений молодежи</p>
                     </Col>
-
-                
                 </Row>
-
-
             </Container>
+
             <Container className="s4-container">
                 <Row className='row-rast'>
-                  
+
+                    <Col className='r-col1'>
+                        <p>З</p>
+                    </Col>    
 
                     <Col className='r-col2'>
-                        <Image className='photo-w' src={W5} width="300" height='300' fluid/>
-                    </Col>
+                        <Image className='photo-w' src={W17} width="160" height='260' fluid/>
+                    </Col>              
 
-                    <Col className='r-col3'>
+                    <Col className='r-col7'>
                         <h1>Зеленка</h1>
                         <p>Дорога между Новым и Старым городом, а именно Лесопарковое шоссе</p>
                     </Col>
                 </Row>
             </Container>
-            <Container className="s-container">
+
+            <Container className="s2-container">
                 <Row className='row-rast'>
 
-                   
-
-                    <Col className='r-col2'>
-                        <Image className='photo-w' src={W6} width="300" height='300' fluid/>
+                    <Col className='r-col1'>
+                        <p>И</p>
                     </Col>
 
-                    <Col className='r-col3'>
+                    <Col className='r-col9'>
+                        <Image className='photo-w' src={W6} width="580" height='390' fluid/>
+                    </Col>
+
+                    <Col className='r-col10'>
                         <h1>Изолента</h1>
                         <p>Здание генеральной дирекции АВТОВАЗ. Высотка характерного голубого цвета, на вершине
                             которой крутится огромная ладья - логотип бренда Lada</p>
                     </Col>
                 </Row>
             </Container>
-            <Container className="s2-container">
+
+            <Container className="s5-container">
                 <Row className='row-rast'>
 
                     <Col className='r-col1'>
@@ -128,10 +145,10 @@ const dictionary = () => {
                     </Col>
 
                     <Col className='r-col2'>
-                        <Image className='photo-w' src={W7} width="300" height='300' fluid/>
+                        <Image className='photo-w' src={W7} width="150" height='190' fluid/>
                     </Col>
 
-                    <Col className='r-col3'>
+                    <Col className='r-col7'>
                         <h1>Карман</h1>
                         <p>Карман- проезд, идущий с дороги, который обычно ведет внутрь жилого квартала. Из-за того,
                             что Автозаводский район проектировался жилыми кварталами, появилась целая сеть карманов,
@@ -139,18 +156,14 @@ const dictionary = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container className="s2-container">
+            <Container className="s3-container">
                 <Row className='row-rast'>
 
-                    <Col className='r-col1'>
-                        <p></p>
+                    <Col className='r-col9'>
+                        <Image className='photo-w' src={W8} width="440" height='410' fluid/>
                     </Col>
 
-                    <Col className='r-col2'>
-                        <Image className='photo-w' src={W8} width="300" height='300' fluid/>
-                    </Col>
-
-                    <Col className='r-col3'>
+                    <Col className='r-col10'>
                         <h1>Книжка</h1>
                         <p>Приемное отделение Тольяттинской городской клинической больницы №5</p>
                     </Col>
@@ -158,7 +171,7 @@ const dictionary = () => {
 
 
             </Container>
-            <Container className="s3-container">
+            <Container className="s6-container">
                 <Row className='row-rast'>
 
                     <Col className='r-col1'>
@@ -166,32 +179,12 @@ const dictionary = () => {
                     </Col>
 
                     <Col className='r-col2'>
-                        <Image className='photo-w' src={W9} width="300" height='300' fluid/>
+                        <Image className='photo-w' src={W9} width="205" height='270' fluid/>
                     </Col>
 
-                    <Col className='r-col3'>
+                    <Col className='r-col7'>
                         <h1>Муравьишки</h1>
                         <p>Острова возле набережной 8го квартала</p>
-                    </Col>
-                </Row>
-
-
-            </Container>
-            <Container className="s4-container">
-                <Row className='row-rast'>
-
-                    <Col className='r-col1'>
-                        <p>Н</p>
-                    </Col>
-
-                    <Col className='r-col2'>
-                        <Image className='photo-w' src={W10} width="300" height='300' fluid/>
-                    </Col>
-
-                    <Col className='r-col3'>
-                        <h1>Новый город</h1>
-                        <p>После того, как начали строить Автозаводский район, название Новый город перекочевало к
-                            нему</p>
                     </Col>
                 </Row>
 
@@ -204,40 +197,22 @@ const dictionary = () => {
                         <p>П</p>
                     </Col>
 
-                    <Col className='r-col2'>
-                        <Image className='photo-w' src={W11} width="300" height='300' fluid/>
+                    <Col className='r-col5'>
+                        <Image className='photo-w' src={W12} width="654" height='422' fluid/>
                     </Col>
 
-                    <Col className='r-col3'>
+                    <Col className='r-col8'>
                         <h1>Петушок</h1>
                         <p>Торговый центр в 7 квартале, в народе раньше назывался петушок из-за находящегося в нем
                             кафе "Золотой петушок"</p>
-                    </Col>
-                </Row>
-
-
-            </Container>
-            <Container className="s-container">
-                <Row className='row-rast'>
-
-                    <Col className='r-col1'>
-                        <p></p>
-                    </Col>
-
-                    <Col className='r-col2'>
-                        <Image className='photo-w' src={W12} width="300" height='300' fluid/>
-                    </Col>
-
-                    <Col className='r-col3'>
                         <h1>ПП</h1>
                         <p>ПП- Парк Победы. На лавочках центральной аллеи любили собираться молодые, а лестницы и
                             парапеты у Вечного огня облюбовали скейтеры и другие экстремалы</p>
                     </Col>
                 </Row>
-
-
             </Container>
-            <Container className="s2-container">
+
+            <Container className="s7-container">
                 <Row className='row-rast'>
 
                     <Col className='r-col1'>
@@ -245,50 +220,34 @@ const dictionary = () => {
                     </Col>
 
                     <Col className='r-col2'>
-                        <Image className='photo-w' src={W13} width="300" height='300' fluid/>
+                        <Image className='photo-w' src={W18} width="160" height='267' fluid/>
                     </Col>
 
-                    <Col className='r-col3'>
+                    <Col className='r-col7'>
                         <h1>Свечка</h1>
                         <p>Свечка- это памятник героям Великой Отечественной Войны на Площади Свободы в Центральном
                             районе Тольятти. На парапетах обелиска, который по форме напоминает свечу, любят
                             кататься скейтеры.</p>
-                    </Col>
-                </Row>
 
-
-            </Container>
-            <Container className="s2-container">
-                <Row className='row-rast'>
-
-                    <Col className='r-col1'>
-                        <p></p>
-                    </Col>
-
-                    <Col className='r-col2'>
-                        <Image className='photo-w' src={W14} width="300" height='300' fluid/>
-                    </Col>
-
-                    <Col className='r-col3'>
                         <h1>Старый город</h1>
                         <p>Центральный район</p>
                     </Col>
                 </Row>
-
-
+                
             </Container>
-            <Container className="s3-container">
+
+            <Container className="s2-container">
                 <Row className='row-rast'>
 
                     <Col className='r-col1'>
                         <p>Т</p>
                     </Col>
 
-                    <Col className='r-col2'>
-                        <Image className='photo-w' src={W15} width="300" height='300' fluid/>
+                    <Col className='r-col-v'>
+                        <Image className='photo-w' src={W15} width="440" height='347' fluid/>
                     </Col>
 
-                    <Col className='r-col3'>
+                    <Col className='r-col4'>
                         <h1>Тещин язык</h1>
                         <p>Сложный перекресток/кольцо на пересечении 70 лет Октября, Ворошилова и Полякова</p>
                     </Col>
@@ -296,7 +255,7 @@ const dictionary = () => {
 
 
             </Container>
-            <Container className="s4-container">
+            <Container className="s8-container">
                 <Row className='row-rast'>
 
                     <Col className='r-col1'>
@@ -304,33 +263,13 @@ const dictionary = () => {
                     </Col>
 
                     <Col className='r-col2'>
-                        <Image className='photo-w' src={W16} width="300" height='300' fluid/>
+                        <Image className='photo-w' src={W19} width="218" height='267' fluid/>
                     </Col>
 
-                    <Col className='r-col3'>
+                    <Col className='r-col7'>
                         <h1>Шлюз</h1>
                         <p>Шлюзовой район. Маленький район в стиле сталинского ампира распологается прямо около ГЭС,
                             за это его называют Маленьким Петербургом</p>
-                    </Col>
-                </Row>
-
-
-            </Container>
-            <Container className="s4-container">
-                <Row className='row-rast'>
-
-                    <Col className='r-col1'>
-                        <p></p>
-                    </Col>
-
-                    <Col className='r-col2'>
-                        <Image className='photo-w' src={W17} width="300" height='300' fluid/>
-                    </Col>
-
-                    <Col className='r-col3'>
-                        <h1>Шоколадка</h1>
-                        <p>Научно-Технический Центр АВТОВАЗ. Представляет собой большое конструктивистское здание
-                            шоколадного цвета. В купе панельной отделкой создает ассоциации к плитке шоколада</p>
                     </Col>
                 </Row>
             </Container>
