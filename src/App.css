@@ -535,4 +535,138 @@ button {
     transform: scale(1.2);
 }
 
+.registration_input{
+    
+    background-color: transparent;
+    margin-right: 200px;
+    width: 287px;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: black;
+    margin-left: 100px;
+}
+.Registration{
+    margin-top: 100px;
+    margin-right: 10px;
+}
+.popup_registration{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+  z-index: 10000;
+    left: 50%;
+    margin-left: -280px;
+    background-color: #EAEAEA;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 60px;
+}
+.close{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px; 
+    color: rgb(0, 0, 0);
+    padding: 10px ;
+}
+
+.button_reg_form{
+
+    background: black;
+    color: #ffffff;
+    height: 35px;
+    width: 200px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-right: 210px;
+    margin-top: 40px;
+}
+.Btn_reg_form{
+    text-decoration: none;
+    background: black;
+    color: #FFFFFF;
+    line-height: 18px;
+    height: 35px;
+    width: 240px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+.Btn_reg_form:hover{
+    transition: background 0.3 ease 0s;
+    border: 2px solid #e34761;
+    border-color: black;
+    background: white;
+    color: black;
+}
+.RegForm {
+    margin-left: 70px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+}
+.registration_form_popup{
+margin-left: 50px
+}
+.reg_text{
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+}
+
+.row-col1_profile{
+    width: 450px;
+    height: 400px;
+    margin-top:50px;
+    margin-left: 200px;
+    box-shadow: 0 0 10px 3px rgb(43, 55, 103);
+}
+.user_name{
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.photo_profile{
+    margin-left: 180px;
+    margin-top: 50px;;
+}
+.colvo_level{
+    margin-left: 100px;
+    margin-top: 0%;
+}
+.row-col2_profile{
+    width: 600px;
+    height: 330px;
+    margin-top:50px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    box-shadow: 0 0 10px 3px rgb(43, 55, 103);
+}
+.goal_text{
+    margin-right: 40px;
+    margin-left: 170px;
+    margin-top: 50px;
+}
+.photo_level{
+    margin-left: 100px;
+    
+}
+.level_text{
+    margin-left: 100px;
+    
+}
+.row-goal1{
+    width: 100px;
+    margin-left: 180px;
+}
+
 

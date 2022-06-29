@@ -1,7 +1,7 @@
 import React from 'react'
 import {Row, Container, Col, Button} from 'react-bootstrap';
 import {Link} from "react-router-dom"
-
+import Instagram from '../image/Instagram.png';
 import Telegram from '../image/Telegram.png';
 import VK from '../image/VK.png';
 
@@ -19,7 +19,7 @@ const Footer = () => {
                             <p> <Link className="Fphihalrmonic" to="/phihalrmonic">филармонии</Link></p></Col>
                         <Col className="Footer2">
                             <p><Link className="Fbook" to="/dictionary">словарь Тольяттинца</Link></p>
-                            <p><a className="Gallery" href="https://www.w3.org/">эстетика</a></p>
+                            <p><Link className="Gallery" to="/Photo">эстетика города</Link></p>
                         </Col>
                         <Col className="Footer3">
                             <form className="subscribe_form">
@@ -29,7 +29,7 @@ const Footer = () => {
                             <Button className='button2' variant="outline-dark">Готово</Button>
                         </Col>
                         <Col className="Footer4">
-                           
+                            <img className='icons' src={Instagram} width="50" height='50' alt={''}/>
                             <img className='icons' src={Telegram} width="50" height='50' alt={''}/>
                             <img className='icons' src={VK} width="50" height='50' alt={''}/>
                         </Col>

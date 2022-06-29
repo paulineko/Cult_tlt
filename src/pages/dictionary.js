@@ -17,9 +17,10 @@ import {Row, Container, Col, Image} from 'react-bootstrap';
 const dictionary = () => {
     function scrollToLetter(args) {
         try {
+            const searchLetter = args.target.id.split('alphabet-letter-')[1].toLowerCase();
             const lettersElements = document.querySelectorAll('.r-col1');
             for (let i = 0; i < lettersElements.length; ++i) {
-                if (lettersElements[i].textContent.toLowerCase() === args.target.textContent.toLowerCase()) {
+                if (lettersElements[i].textContent.toLowerCase() === searchLetter) {
                     window.scrollTo({
                         top: lettersElements[i].offsetTop,
                         left: 0,
@@ -38,12 +39,12 @@ const dictionary = () => {
         try {
             image = require(`../image/alphabet/${letter.toUpperCase()}.png`);
         } catch (e) {}
-        return image ? <img class='alphabet-letter' key={index} src={image} alt={''}/> : null;
+        return image ? <img className='alphabet-letter' id={`alphabet-letter-${letter}`} onClick={scrollToLetter} key={index} src={image} alt={''}/> : null;
     });
 
     return (
         <div>
-            <div className="alphabet-container"><div class='alphabet-child'>{alphabet}</div></div>
+            <div className="alphabet-container"><div className='alphabet-child'>{alphabet}</div></div>
 
             <Container className="s-container">
                 <Row className='row-rast'>
