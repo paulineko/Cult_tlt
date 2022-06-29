@@ -324,7 +324,6 @@ button {
 .row-rast {
     display: flex;
     align-items: stretch;
-
 }
 
 
@@ -376,16 +375,12 @@ button {
     justify-content: center;
 }
 
-
-
 .s2-container {
     align-items: flex-start;
     background: #568EA4;
     display: flex;
     justify-content: center;
 }
-
-
 
 .s3-container {
     align-items: flex-start;
@@ -394,16 +389,70 @@ button {
     justify-content: center;
 }
 
-
-
 .s4-container {
     align-items: flex-start;
-    background: #8ca0b1;
+    background-image: url(image/Зеленка_фон.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     display: flex;
     justify-content: center;
 }
 
+.s5-container {
+    align-items: flex-start;
+    background-image: url(image/карман_фон.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+}
 
+.s6-container {
+    align-items: flex-start;
+    background-image: url(image/муравьишки_фон.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+}
+
+.s7-container {
+    align-items: flex-start;
+    background-image: url(image/старый_город.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+}
+
+.s8-container {
+    align-items: flex-start;
+    background-image: url(image/шлюз.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+}
+
+.r-col1 {
+    color: transparent;
+}
+
+.r-col2 {
+    width: 490px;
+    color: #FFFFFF;
+}
+
+.r-col3 {
+
+    width: 300px;
+    margin-left: 30px;
+}
 
 .r-col4 {
     width: 340px;
@@ -414,8 +463,6 @@ button {
 }
 
 .r-col5 {
-    width: 680px;
-    
 
 }
 
@@ -427,26 +474,35 @@ button {
 
 }
 
-.r-col2 {
-    width: 490px;
+.r-col7 {
+    width: 300px;
+    margin-left: 30px;
     color: #FFFFFF;
 
 }
 
-.r-col3 {
+.r-col8 {
+    width: 440px;
+}
 
-    width: 300px;
-    margin-left: 20px;
+.r-col9 {
+    width: 620px;
+}
+
+.r-col10 {
+    width: 400px;
+
+
+    color: #FFFFFF;
+
 }
 
 .r-col-v {
-
-    width: 470px;
-   
+    width: 470px;  
 }
 
 .photo-w {
-    margin-top: 20px;
+    margin-top: 21.440px;
     display: flex;
     justify-content: center;
 }
@@ -461,21 +517,22 @@ button {
 .alphabet-container {
     display: flex;
     align-items: center;
-    background: #8ca0b1;
+    background: #EAEAEA;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    font-size: 70px;
-    font-weight: bold;
+    width: 100%;
 }
 
 .alphabet-letter {
-    margin: 0;
-    width: auto;
-    padding: 12px;
+    width: 9.0909%;
+    height: 9.0909%;
+    transition: 1s;
 }
 
 .alphabet-letter:hover {
     cursor: pointer;
-    color: darkred;
+    transform: scale(1.2);
 }
+
+
